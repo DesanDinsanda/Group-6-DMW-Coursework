@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dropdown</title>
+    <style>
+        nav {
+            text-align: center; /* Centers the profile image */
+            background: #333;
+            padding: 10px;
+        }
+
+        .profile-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 150px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .profile-container:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="profile-container">
+        <img src="images/adminProfilePic.png" alt="Profile" class="profile-img">
+        <div class="dropdown">
+            <a href="profile.html">Profile</a>
+            <a href="orders.html">Orders</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
